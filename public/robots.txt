@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://daniellaszkowicz.com
+
+# Sitemaps
+Sitemap: https://daniellaszkowicz.com/sitemap.xml
