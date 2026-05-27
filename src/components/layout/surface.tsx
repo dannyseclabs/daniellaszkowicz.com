@@ -10,9 +10,12 @@ type SurfaceProps = ComponentPropsWithoutRef<"div"> & {
 };
 
 const variants: Record<SurfaceVariant, string> = {
-  default: "border-line bg-card text-card-foreground",
-  muted: "border-line bg-surface-muted text-foreground",
-  elevated: "border-line bg-surface-elevated text-card-foreground shadow-soft",
+  default:
+    "border-line/80 bg-card/86 text-card-foreground shadow-line backdrop-blur-sm",
+  muted:
+    "border-line/75 bg-surface-muted/78 text-foreground shadow-line backdrop-blur-sm",
+  elevated:
+    "border-line/80 bg-surface-elevated/88 text-card-foreground shadow-soft backdrop-blur-md",
   transparent: "border-line bg-transparent text-foreground",
 };
 

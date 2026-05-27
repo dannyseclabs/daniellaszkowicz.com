@@ -10,16 +10,19 @@ export function HomeContactCta() {
   return (
     <Section spacing="tight">
       <Container size="lg">
-        <Surface className="p-6 sm:p-8 lg:p-10" variant="elevated">
-          <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
+        <Surface
+          className="atmospheric-panel p-6 sm:p-8 lg:p-9"
+          variant="elevated"
+        >
+          <div className="grid gap-7 lg:grid-cols-[1fr_auto] lg:items-end">
             <div>
-              <p className="text-muted-foreground mb-5 font-mono text-xs tracking-[0.22em] uppercase">
+              <p className="text-muted-foreground mb-4 font-mono text-xs tracking-[0.22em] uppercase">
                 Contact
               </p>
-              <h2 className="font-heading max-w-3xl text-4xl leading-tight font-medium text-balance sm:text-5xl">
+              <h2 className="font-heading max-w-3xl text-4xl leading-tight font-medium text-balance sm:text-[2.85rem]">
                 A simple signal path for future collaboration and conversation.
               </h2>
-              <p className="text-muted-foreground mt-5 max-w-2xl text-base leading-7 text-pretty sm:text-lg sm:leading-8">
+              <p className="text-muted-foreground mt-4 max-w-2xl text-base leading-7 text-pretty sm:text-[1.05rem] sm:leading-8">
                 The contact route is kept intentionally static for now, ready
                 for preferred links, availability, and context when the content
                 layer matures.

@@ -9,10 +9,10 @@ type ContainerProps = ComponentPropsWithoutRef<"div"> & {
 };
 
 const containerSizes: Record<ContainerSize, string> = {
-  sm: "max-w-3xl",
-  md: "max-w-5xl",
-  lg: "max-w-6xl",
-  xl: "max-w-7xl",
+  sm: "max-w-[var(--content-width-reading)]",
+  md: "max-w-4xl",
+  lg: "max-w-[var(--content-width)]",
+  xl: "max-w-[var(--content-width)]",
   wide: "max-w-[var(--content-width-wide)]",
   full: "max-w-none",
 };

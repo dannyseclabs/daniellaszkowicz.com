@@ -19,18 +19,18 @@ export function InfoCard({
   className,
 }: InfoCardProps) {
   return (
-    <Surface className={cn("p-5 sm:p-6", className)} interactive>
-      <div className="flex min-h-full flex-col gap-8">
+    <Surface className={cn("p-5", className)} interactive>
+      <div className="flex min-h-full flex-col gap-6">
         <div>
           {eyebrow ? (
-            <p className="text-muted-foreground mb-4 font-mono text-xs tracking-[0.18em] uppercase">
+            <p className="text-muted-foreground mb-3 font-mono text-xs tracking-[0.18em] uppercase">
               {eyebrow}
             </p>
           ) : null}
-          <h3 className="font-heading text-2xl leading-tight font-medium text-balance">
+          <h3 className="font-heading text-[1.65rem] leading-tight font-medium text-balance">
             {title}
           </h3>
-          <p className="text-muted-foreground mt-4 text-sm leading-6 text-pretty">
+          <p className="text-muted-foreground mt-3 text-sm leading-6 text-pretty">
             {description}
           </p>
         </div>

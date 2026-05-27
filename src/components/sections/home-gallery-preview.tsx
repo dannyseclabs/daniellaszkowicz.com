@@ -10,7 +10,11 @@ import { galleryPreview } from "@/data/home";
 
 export function HomeGalleryPreview() {
   return (
-    <Section className="border-line bg-background/70 border-y" id="gallery">
+    <Section
+      className="border-line/70 bg-background/58 border-y"
+      id="gallery"
+      spacing="tight"
+    >
       <Container size="wide">
         <SectionHeading
           action={
@@ -22,7 +26,7 @@ export function HomeGalleryPreview() {
           title="A visual archive for photographs, places, tools, and lab traces."
           description="The gallery is ready for real images later; for now the structure reserves rhythm, aspect ratio, and editorial framing."
         />
-        <Grid columns="three">
+        <Grid columns="three" gap="sm">
           {galleryPreview.map((item) => (
             <GalleryCard key={item.title} {...item} />
           ))}

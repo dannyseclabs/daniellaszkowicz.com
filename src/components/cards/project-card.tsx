@@ -24,7 +24,7 @@ export function ProjectCard({
 }: ProjectCardProps) {
   const card = (
     <Surface
-      className={cn("min-h-72 p-5 sm:p-6", className)}
+      className={cn("min-h-64 p-5", className)}
       interactive={Boolean(href)}
       variant="elevated"
     >
@@ -42,15 +42,15 @@ export function ProjectCard({
             />
           ) : null}
         </div>
-        <div className="mt-auto pt-14">
-          <h3 className="font-heading text-3xl leading-tight font-medium text-balance">
+        <div className="mt-auto pt-10">
+          <h3 className="font-heading text-[1.95rem] leading-tight font-medium text-balance">
             {title}
           </h3>
-          <p className="text-muted-foreground mt-4 text-sm leading-6 text-pretty">
+          <p className="text-muted-foreground mt-3 text-sm leading-6 text-pretty">
             {description}
           </p>
           {tags?.length ? (
-            <div className="mt-6 flex flex-wrap gap-2">
+            <div className="mt-5 flex flex-wrap gap-2">
               {tags.map((tag) => (
                 <Tag key={tag}>{tag}</Tag>
               ))}

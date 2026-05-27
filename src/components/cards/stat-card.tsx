@@ -16,10 +16,12 @@ export function StatCard({
 }: StatCardProps) {
   return (
     <Surface className={cn("p-5", className)} variant="muted">
-      <p className="font-heading text-4xl leading-none font-medium">{value}</p>
-      <p className="mt-3 text-sm font-medium">{label}</p>
+      <p className="font-heading text-[2.45rem] leading-none font-medium">
+        {value}
+      </p>
+      <p className="mt-2.5 text-sm font-medium">{label}</p>
       {description ? (
-        <p className="text-muted-foreground mt-2 text-sm leading-6">
+        <p className="text-muted-foreground mt-2 text-sm leading-6 text-pretty">
           {description}
         </p>
       ) : null}

@@ -8,14 +8,14 @@ import { currentFocusItems } from "@/data/home";
 
 export function HomeCurrentFocus() {
   return (
-    <Section id="current-focus">
+    <Section className="bg-surface/24" id="current-focus" spacing="tight">
       <Container size="wide">
         <SectionHeading
           eyebrow="Current focus"
           title="A few clear lanes, kept intentionally quiet."
           description="The foundation is organized around repeatable pillars: secure thinking, useful infrastructure, practical builds, and writing that compounds."
         />
-        <Grid columns="three">
+        <Grid columns="three" gap="sm">
           {currentFocusItems.map((item) => (
             <InfoCard
               key={item.title}

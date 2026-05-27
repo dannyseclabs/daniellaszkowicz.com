@@ -10,7 +10,11 @@ import { featuredProjects } from "@/data/home";
 
 export function HomeFeaturedProjects() {
   return (
-    <Section className="bg-surface/55 border-line border-y" id="projects">
+    <Section
+      className="border-line/70 bg-surface/48 border-y"
+      id="projects"
+      spacing="tight"
+    >
       <Container size="wide">
         <SectionHeading
           action={
@@ -22,7 +26,7 @@ export function HomeFeaturedProjects() {
           title="Project slots before the real case studies arrive."
           description="Cards are ready for polished builds, experiments, utilities, and security or homelab artifacts."
         />
-        <Grid columns="three">
+        <Grid columns="three" gap="sm">
           {featuredProjects.map((project) => (
             <ProjectCard key={project.title} {...project} />
           ))}

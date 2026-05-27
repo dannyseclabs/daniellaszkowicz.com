@@ -10,7 +10,7 @@ import { journalPreview } from "@/data/home";
 
 export function HomeJournalPreview() {
   return (
-    <Section id="journal">
+    <Section id="journal" spacing="tight">
       <Container size="lg">
         <SectionHeading
           action={

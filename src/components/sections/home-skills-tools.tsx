@@ -8,20 +8,20 @@ import { skillGroups } from "@/data/home";
 
 export function HomeSkillsTools() {
   return (
-    <Section id="skills">
+    <Section id="skills" spacing="tight">
       <Container size="wide">
         <SectionHeading
           eyebrow="Skills and tools"
           title="Technical without losing the human texture."
           description="A reusable system for showing tools, learning areas, and preferred working modes without turning the site into a resume grid."
         />
-        <Grid columns="four">
+        <Grid columns="four" gap="sm">
           {skillGroups.map((group) => (
-            <Surface className="p-5 sm:p-6" key={group.title}>
+            <Surface className="p-5" key={group.title}>
               <h3 className="font-heading text-2xl font-medium">
                 {group.title}
               </h3>
-              <div className="mt-6 flex flex-wrap gap-2">
+              <div className="mt-5 flex flex-wrap gap-2">
                 {group.items.map((item) => (
                   <SkillBadge key={item}>{item}</SkillBadge>
                 ))}

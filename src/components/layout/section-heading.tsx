@@ -22,22 +22,22 @@ export function SectionHeading({
   return (
     <div
       className={cn(
-        "mb-10 flex flex-col gap-6 sm:mb-12 lg:flex-row lg:items-end lg:justify-between",
+        "mb-8 flex flex-col gap-5 sm:mb-10 lg:flex-row lg:items-end lg:justify-between",
         align === "center" && "mx-auto max-w-3xl text-center lg:items-center",
         className,
       )}
     >
-      <div className="max-w-3xl">
+      <div className="max-w-[var(--content-width-reading)]">
         {eyebrow ? (
-          <p className="text-muted-foreground mb-4 font-mono text-xs tracking-[0.22em] uppercase">
+          <p className="text-muted-foreground mb-3 font-mono text-xs tracking-[0.22em] uppercase">
             {eyebrow}
           </p>
         ) : null}
-        <h2 className="font-heading text-4xl leading-[1.02] font-medium text-balance sm:text-5xl">
+        <h2 className="font-heading text-4xl leading-[1.04] font-medium text-balance sm:text-[2.8rem]">
           {title}
         </h2>
         {description ? (
-          <p className="text-muted-foreground mt-5 max-w-2xl text-base leading-7 text-pretty sm:text-lg sm:leading-8">
+          <p className="text-muted-foreground mt-4 max-w-2xl text-base leading-7 text-pretty sm:text-[1.05rem] sm:leading-8">
             {description}
           </p>
         ) : null}

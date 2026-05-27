@@ -26,7 +26,7 @@ export function GalleryCard({
 }: GalleryCardProps) {
   const card = (
     <Surface
-      className={cn("overflow-hidden p-3", className)}
+      className={cn("overflow-hidden p-2.5", className)}
       interactive={Boolean(href)}
     >
       <div className="bg-surface-muted relative aspect-[4/3] overflow-hidden rounded-md">
@@ -45,7 +45,7 @@ export function GalleryCard({
           />
         )}
       </div>
-      <div className="p-3 pt-5">
+      <div className="p-3 pt-4">
         <h3 className="font-heading text-2xl leading-tight font-medium">
           {title}
         </h3>

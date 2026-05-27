@@ -12,7 +12,7 @@ const sectionSpacing: Record<SectionSpacing, string> = {
   none: "py-0",
   tight: "section-spacing-tight",
   default: "section-spacing",
-  loose: "py-24 sm:py-32 lg:py-40",
+  loose: "py-20 sm:py-24 lg:py-28",
 };
 
 export function Section({
