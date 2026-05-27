@@ -52,9 +52,17 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${newsreader.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col">
+      <body className="bg-background text-foreground flex min-h-full flex-col">
+        <a
+          className="bg-primary text-primary-foreground focus-visible:ring-ring sr-only z-50 rounded-md px-4 py-3 text-sm font-medium focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus-visible:ring-3"
+          href="#main-content"
+        >
+          Skip to content
+        </a>
         <Navbar />
-        <div className="flex flex-1 flex-col">{children}</div>
+        <main className="page-shell flex flex-1 flex-col" id="main-content">
+          {children}
+        </main>
         <Footer />
         <Analytics />
         <SpeedInsights />

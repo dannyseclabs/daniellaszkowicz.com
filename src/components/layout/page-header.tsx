@@ -15,10 +15,10 @@ export function PageHeader({
   className,
 }: PageHeaderProps) {
   return (
-    <Container className={cn("pt-16 sm:pt-20 lg:pt-24", className)}>
-      <div className="border-border max-w-4xl border-b pb-10 sm:pb-12">
+    <Container className={cn("pt-16 sm:pt-20 lg:pt-24", className)} size="lg">
+      <div className="border-line max-w-4xl border-b pb-10 sm:pb-12">
         {eyebrow ? (
-          <p className="text-muted-foreground mb-5 font-mono text-xs tracking-[0.2em] uppercase">
+          <p className="text-muted-foreground mb-5 font-mono text-xs tracking-[0.22em] uppercase">
             {eyebrow}
           </p>
         ) : null}
@@ -26,7 +26,7 @@ export function PageHeader({
           {title}
         </h1>
         {description ? (
-          <p className="text-muted-foreground mt-6 max-w-2xl text-lg leading-8">
+          <p className="text-muted-foreground mt-6 max-w-2xl text-lg leading-8 text-pretty">
             {description}
           </p>
         ) : null}

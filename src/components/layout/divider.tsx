@@ -1,0 +1,11 @@
+import type { ComponentPropsWithoutRef } from "react";
+
+import { cn } from "@/lib/utils";
+
+type DividerProps = ComponentPropsWithoutRef<"hr">;
+
+export function Divider({ className, ...props }: DividerProps) {
+  return (
+    <hr className={cn("border-line border-0 border-t", className)} {...props} />
+  );
+}

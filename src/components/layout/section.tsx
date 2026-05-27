@@ -2,10 +2,25 @@ import type { ComponentPropsWithoutRef } from "react";
 
 import { cn } from "@/lib/utils";
 
-type SectionProps = ComponentPropsWithoutRef<"section">;
+type SectionSpacing = "none" | "tight" | "default" | "loose";
 
-export function Section({ className, ...props }: SectionProps) {
+type SectionProps = ComponentPropsWithoutRef<"section"> & {
+  spacing?: SectionSpacing;
+};
+
+const sectionSpacing: Record<SectionSpacing, string> = {
+  none: "py-0",
+  tight: "section-spacing-tight",
+  default: "section-spacing",
+  loose: "py-24 sm:py-32 lg:py-40",
+};
+
+export function Section({
+  className,
+  spacing = "default",
+  ...props
+}: SectionProps) {
   return (
-    <section className={cn("py-16 sm:py-20 lg:py-24", className)} {...props} />
+    <section className={cn(sectionSpacing[spacing], className)} {...props} />
   );
 }
